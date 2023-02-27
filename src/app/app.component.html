@@ -1,0 +1,22 @@
+<h3>BackEnd Response</h3>
+<div>
+  <form [formGroup]="decryprtionForm" >
+    <div class="form-group">
+      <label>EncryptionCode</label>
+      <input type="text" class="form-control" formControlName="encryption" />
+    </div>
+    <div class="form-group">
+      <label>SecretKey</label>
+      <input type="text" class="form-control" formControlName="skey" />
+    </div>
+    <button (click)="decryptResponse()">Response</button>
+    <button (click)="payload()">Payload</button>
+  </form>
+</div>
+<div>
+  <h4>{{ resonses }}</h4>
+</div>
+<br/>
+<br/>
+<br/>
+
